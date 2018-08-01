@@ -17,9 +17,10 @@ public class ConfigYou extends JFinalConfig {
     // 路由配置
     @Override
     public void configRoute(Routes routes) {
-        routes.add("/",HelloController.class);
+        routes.setBaseViewPath("/you");
+        routes.add("/helloo",HelloController.class);
     }
-
+    // 引擎模板
     @Override
     public void configEngine(Engine me) {
     }

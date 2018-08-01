@@ -1,5 +1,6 @@
 package dyangx.www.controller;
 
+import com.jfinal.core.ActionKey;
 import com.jfinal.core.Controller;
 
 /**
@@ -7,6 +8,7 @@ import com.jfinal.core.Controller;
  */
 public class HelloController extends Controller {
 
+    @ActionKey("/youu")
     public void index(){
         renderText("Hello,You !");
     }
